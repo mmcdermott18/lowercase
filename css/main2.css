@@ -1,0 +1,1113 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles should be MOBILE FIRST
+   ========================================================================== */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: dimgray;
+    text-rendering: optimizeLegibility;
+    background-color: whitesmoke;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid whitesmoke;
+
+}
+
+.box {
+    border: 1px solid whitesmoke;
+    background-color: dodgerblue;
+    /*padding: 10px;*/
+}
+
+.boxoverlay {
+    background-color: rgba(30,144,255,.8);
+    width:100%; 
+    height:100%;
+    -webkit-transition: background-color 1s ease;
+}
+
+.boxoverlay:hover {
+    background-color: rgba(30,144,255,.1);
+}
+
+.boxcontent {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    max-width: 60%; 
+}
+
+.headercontent {
+    position: absolute;
+    bottom: 0;
+    right: 10px;    
+}
+
+header {
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid whitesmoke;
+    background-color: teal;
+    padding: 10px;
+    text-align: right;
+}
+
+#square1 {
+    background: url('http://lorempixel.com/640/480/abstract/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+
+#square2 {
+    background: url('http://lorempixel.com/640/480/animals/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 0;
+    left: 40%;
+}
+
+#square3 {
+    background: url('http://lorempixel.com/640/480/business/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 0;
+    left: 60%;
+}
+
+#square4 {
+    background: url('http://lorempixel.com/640/480/cats/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 0;
+    left: 80%;
+}
+
+#square5 {
+    background: url('http://lorempixel.com/640/480/city/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+
+#square6 {
+    background: url('http://lorempixel.com/640/480/food/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+
+#square7 {
+    background: url('http://lorempixel.com/640/480/nightlife/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+
+#square8 {
+    background: url('http://lorempixel.com/640/480/fashion/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 25%;
+    left: 60%;
+}
+
+#square9 {
+    background: url('http://lorempixel.com/640/480/people/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 25%;
+    left: 80%;
+}
+
+#square10 {
+    background: url('http://lorempixel.com/640/480/nature/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+#square11 {
+    background: url('http://lorempixel.com/640/480/sports/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+
+#square12 {
+    background: url('http://lorempixel.com/640/480/technics/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+#square13 {
+    background: url('http://lorempixel.com/640/480/transport/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+}
+
+#square14 {
+    background: url('http://lorempixel.com/640/480/abstract/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+}
+
+#square15 {
+    background: url('http://lorempixel.com/640/480/animals/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 75%;
+    left: 0;
+}
+
+#square16 {
+    background: url('http://lorempixel.com/640/480/business/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 75%;
+    left: 20%;
+}
+
+#square17 {
+    background: url('http://lorempixel.com/640/480/cats/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 75%;
+    left: 40%;
+}
+
+#square18 {
+    background: url('http://lorempixel.com/640/480/city/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 75%;
+    left: 60%;
+}
+
+#square19 {
+    background: url('http://lorempixel.com/640/480/food/');
+    background-size: cover;                
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 75%;
+    left: 80%;
+}
+
+.title {
+    /*float: left;*/
+}
+
+nav {
+    /*float: right;*/
+    margin-top: 50px;
+}
+
+.button {
+    /*float: left;*/
+    /*height: 2.8em;*/
+}
+
+footer {
+    color: rgba(60,60,60,1);
+    text-align: center;
+    background-color: white;
+    padding: 5px 0 5px 0;
+    clear: both;
+    border: 1px solid whitesmoke;
+    display: none;
+}
+
+footer p {
+    font-size: .7em;
+}
+ul {
+        list-style: none;
+        padding-left: 0px;
+        margin-top: 10px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }​
+
+li {
+    list-style-type: none;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    font-size: 2.8em;
+}
+
+header h1 {
+    color: whitesmoke;
+    font-weight: 100;
+    line-height: 1.1em;
+}
+
+
+h2 {
+    font-size: 1em;
+    line-height: .8em;
+    margin-right: 2px;
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+h2 span:hover {
+    border-bottom: 1px solid whitesmoke;
+}
+
+.buttonleft {
+    margin-right: 10px;
+}
+
+h3 {
+    color: whitesmoke;
+    text-align: right;
+    margin-bottom: 6px;
+}
+
+h3 span:hover, h4 span:hover {
+    border-bottom: 2px solid whitesmoke;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: .8em;
+    margin-top: 10px;
+    color: whitesmoke;
+    text-align: right;
+}
+
+
+
+p {
+    margin: 0;
+    padding: 0;
+    width: 33.3333%;
+    text-align: center;
+}
+
+.float {
+    float: left;
+}
+
+footer p {
+    width: 100%;
+}
+
+div.empty {
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-width: 1250px) {
+    /* Style adjustments for viewports that meet the condition */
+    header {
+        width: 25%;
+        height: 25%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid whitesmoke;
+        background-color: teal;
+        padding: 10px;
+        text-align: right;
+    }
+
+    #square1 {
+        background: url('http://lorempixel.com/640/480/abstract/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 25%;
+        height: 25%;
+        position: absolute;
+        top: 0;
+        left: 25%;
+    }
+
+    #square2 {
+        background: url('http://lorempixel.com/640/480/animals/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 25%;
+        height: 25%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+    }
+
+    #square3 {
+        background: url('http://lorempixel.com/640/480/business/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 25%;
+        height: 25%;
+        position: absolute;
+        top: 0;
+        left: 75%;
+    }
+
+    #square4 {
+        background: url('http://lorempixel.com/640/480/cats/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 25%;
+        height: 25%;
+        position: absolute;
+        top: 25%;
+        left: 0;
+    }
+
+    #square5 {
+        background: url('http://lorempixel.com/640/480/city/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 25%;
+        height: 25%;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+    }
+
+    #square6 {
+        background: url('http://lorempixel.com/640/480/food/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 25%;
+        height: 25%;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+    }
+
+    #square7 {
+        background: url('http://lorempixel.com/640/480/nightlife/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 25%;
+        height: 25%;
+        position: absolute;
+        top: 25%;
+        left: 75%;
+    }
+
+    #square8 {
+        background: url('http://lorempixel.com/640/480/fashion/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 25%;
+        height: 25%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+
+    #square9 {
+        background: url('http://lorempixel.com/640/480/people/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 25%;
+        height: 25%;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+    }
+
+    #square10 {
+        background: url('http://lorempixel.com/640/480/nature/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 25%;
+        height: 25%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    #square11 {
+        background: url('http://lorempixel.com/640/480/sports/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 25%;
+        height: 25%;
+        position: absolute;
+        top: 50%;
+        left: 75%;
+    }
+
+    #square12 {
+        background: url('http://lorempixel.com/640/480/technics/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 25%;
+        height: 25%;
+        position: absolute;
+        top: 75%;
+        left: 0;
+    }
+
+    #square13 {
+        background: url('http://lorempixel.com/640/480/transport/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 25%;
+        height: 25%;
+        position: absolute;
+        top: 75%;
+        left: 25%;
+    }
+
+    #square14 {
+        background: url('http://lorempixel.com/640/480/abstract/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 25%;
+        height: 25%;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+    }
+
+    #square15 {
+        background: url('http://lorempixel.com/640/480/animals/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 25%;
+        height: 25%;
+        position: absolute;
+        top: 75%;
+        left: 75%;
+    }
+
+    #square16, #square17, #square18, #square19 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    /* Style adjustments for viewports that meet the condition */
+    header {
+        width: 33.3333333%;
+        height: 33.3333333%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid whitesmoke;
+        background-color: teal;
+        padding: 10px;
+        text-align: right;
+    }
+
+    #square1 {
+        background: url('http://lorempixel.com/640/480/abstract/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 33.3333333%;
+        height: 33.3333333%;
+        position: absolute;
+        top: 0;
+        left: 33.3333333%;
+    }
+
+    #square2 {
+        background: url('http://lorempixel.com/640/480/animals/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 33.3333333%;
+        height: 33.3333333%;
+        position: absolute;
+        top: 0;
+        left: 66.6666666%;
+    }
+
+    #square3 {
+        background: url('http://lorempixel.com/640/480/business/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 33.3333333%;
+        height: 33.3333333%;
+        position: absolute;
+        top: 33.3333333%;
+        left: 0;
+    }
+
+    #square4 {
+        background: url('http://lorempixel.com/640/480/cats/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 33.3333333%;
+        height: 33.3333333%;
+        position: absolute;
+        top: 33.3333333%;
+        left: 33.3333333%;
+    }
+
+    #square5 {
+        background: url('http://lorempixel.com/640/480/city/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 33.3333333%;
+        height: 33.3333333%;
+        position: absolute;
+        top: 33.3333333%;
+        left: 66.6666666%;
+    }
+
+    #square6 {
+        background: url('http://lorempixel.com/640/480/food/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 33.3333333%;
+        height: 33.3333333%;
+        position: absolute;
+        top: 66.6666666%;
+        left: 0;
+    }
+
+    #square7 {
+        background: url('http://lorempixel.com/640/480/nightlife/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 33.3333333%;
+        height: 33.3333333%;
+        position: absolute;
+        top: 66.6666666%;
+        left: 33.3333333%;
+    }
+
+    #square8 {
+        background: url('http://lorempixel.com/640/480/fashion/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 33.3333333%;
+        height: 33.3333333%;
+        position: absolute;
+        top: 66.6666666%;
+        left: 66.6666666%;
+    }
+
+    #square9, #square10, #square11, #square12, #square13, #square14, #square15, #square16, #square17, #square18, #square19 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    /* Style adjustments for viewports that meet the condition */
+    header {
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid whitesmoke;
+        background-color: teal;
+        padding: 10px;
+        text-align: right;
+    }
+
+    #square1 {
+        background: url('http://lorempixel.com/640/480/abstract/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+    }
+
+    #square2 {
+        background: url('http://lorempixel.com/640/480/animals/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+
+    #square3 {
+        background: url('http://lorempixel.com/640/480/business/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    #square4, #square5, #square6, #square7, #square8, #square9, #square10, #square11, #square12, #square13, #square14, #square15, #square16, #square17, #square18, #square19 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    /* Style adjustments for viewports that meet the condition */
+    header {
+        width: 100%;
+        height: 25%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid whitesmoke;
+        background-color: teal;
+        padding: 10px;
+        text-align: right;
+    }
+
+    #square1 {
+        background: url('http://lorempixel.com/640/480/abstract/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 25%;
+        position: absolute;
+        top: 25%;
+        left: 0;
+    }
+
+    #square2 {
+        background: url('http://lorempixel.com/640/480/animals/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 25%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+
+    #square3 {
+        background: url('http://lorempixel.com/640/480/business/');
+        background-size: cover;                
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 25%;
+        position: absolute;
+        top: 75%;
+        left: 0;
+    }
+
+    #square4, #square5, #square6, #square7, #square8, #square9, #square10, #square11, #square12, #square13, #square14, #square15, #square16, #square17, #square18, #square19 {
+        display: none;
+    }
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
