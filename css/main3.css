@@ -726,6 +726,13 @@ a:link, a:visited, a:hover, a:active {
         float: left;
     }
 
+    header h1 {
+        color: whitesmoke;
+        font-weight: 300;
+        line-height: 1.1em;
+        font-size: 1.6em;
+    }
+
     #square1, #square2, #square3, #square4, #square5, #square6, #square7, #square8, #square9, #square10, #square11, #square12, #square13, #square14, #square15, #square16, #square17, #square18, #square19 {
         background-image: none;
     }
